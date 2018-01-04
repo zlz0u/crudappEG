@@ -1,0 +1,17 @@
+<!-- crudApp/templates/auth/register.html -->
+
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+<!-- check if this is already passed in from decorator, title="Register"??? -->
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<div class="content-section">
+	<div class="center">
+		<h1>Register for an account</h1>
+		<br>
+		{{ wtf.quick_form(form) }}
+	</div>
+</div>
+{% endblock %}
